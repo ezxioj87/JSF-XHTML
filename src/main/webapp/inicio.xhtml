@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>Login</title>
+</h:head>
+
+<h:body>
+	<h:form>
+		<p:growl id="messages" showDetail="false" />
+		<p:menubar>
+			<p:menuitem value="Correo" url="correo.xhtml" icon="ui-icon-gear" />
+
+			<p:submenu label="Galerias" icon="ui-icon-gear">
+				<p:menuitem value="Galeria" url="Galeria.xhtml" icon="ui-icon-gear" />
+				<p:menuitem value="ContentFlow" url="ContentFlow.xhtml"
+					icon="ui-icon-gear" />
+				<p:menuitem value="Fade" url="Fade.xhtml" icon="ui-icon-gear" />
+			</p:submenu>
+			<p:menuitem value="Información" url="PanelWizard.xhtml"
+				icon="ui-icon-gear" />
+			<p:menuitem value="Salir" url="helloworld.xhtml" icon="ui-icon-power" />
+
+		</p:menubar>
+	</h:form>
+	<ui:insert name="general_content" />
+</h:body>
+</html>
